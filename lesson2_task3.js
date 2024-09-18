@@ -1,8 +1,8 @@
 const minAge = 18;
 const maxAge = 60;
-const age = "sdfsdfsdfs"; //вод возраста сюда
+const age = 5; //вод возраста сюда
 const correctAge = isNaN(age) ? null : Number(age);
-
+console.log(correctAge);
 if (correctAge === null) {
   console.log("Incorrect data type");
 } else if (correctAge < minAge) {
