@@ -1,16 +1,17 @@
 const minAge = 18;
 const maxAge = 60;
-const age = null;
+const age = "sdfsdfsdfs"; //вод возраста сюда
+const correctAge = isNaN(age) ? null : Number(age);
 
-if (isNaN(age)) {
+if (correctAge === null) {
   console.log("Incorrect data type");
-} else if (age < minAge) {
+} else if (correctAge < minAge) {
   console.log(
     "You dont have access cause your age is " + age + " Its less then " + minAge
   );
-} else if (maxAge > age && age >= minAge) {
+} else if (maxAge > correctAge && correctAge >= minAge) {
   console.log("welcome !");
-} else if (age > maxAge) {
+} else if (correctAge > maxAge) {
   console.log("Keep calm and look Culture channel");
 } else {
   console.log("Technical work");
