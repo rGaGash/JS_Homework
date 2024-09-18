@@ -2,7 +2,7 @@ const minAge = 18;
 const maxAge = 60;
 const age = null;
 
-if (isNaN(age)) {
+if (typeof age !== Number) {
   console.log("Incorrect data type");
 } else if (age < minAge) {
   console.log(
