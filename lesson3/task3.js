@@ -1,4 +1,4 @@
-let word = "dffgdfg";
+let word = "ЗдесьЯКОБЫ текст ДЛЯ проверки__9";
 let glasnie = ["а", "о", "и", "е", "ё", "э", "ы", "у", "ю", "я"];
 let soglasnie = [
   "б",
@@ -22,6 +22,8 @@ let soglasnie = [
   "ч",
   "ш",
   "щ",
+  "ь",
+  "ъ",
 ];
 let glasnieScore = 0;
 let soglasnieScore = 0;
