@@ -1,5 +1,5 @@
 //Задание1
-for (i = 10; i >= 0; i--) {
+for (let i = 10; i >= 0; i--) {
   if (i % 2 !== 0) {
     continue;
   }
@@ -7,7 +7,7 @@ for (i = 10; i >= 0; i--) {
 }
 
 //Задание2
-for (i = 1; i <= 5; i++) {
+for (let i = 1; i <= 5; i++) {
   console.log(":)".repeat(i));
 }
 

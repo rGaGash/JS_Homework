@@ -1,6 +1,6 @@
-let word = "ЗдесьЯКОБЫ текст ДЛЯ проверки__9";
-let glasnie = ["а", "о", "и", "е", "ё", "э", "ы", "у", "ю", "я"];
-let soglasnie = [
+const word = "ЗдесьЯКОБЫ текст ДЛЯ проверки__9";
+const glasnie = ["а", "о", "и", "е", "ё", "э", "ы", "у", "ю", "я"];
+const soglasnie = [
   "б",
   "в",
   "г",
@@ -27,14 +27,14 @@ let soglasnie = [
 ];
 let glasnieScore = 0;
 let soglasnieScore = 0;
-let changedRegistr = word.toLowerCase();
+let toLowerCasedStr = word.toLowerCase();
 
-for (i = 0; i <= changedRegistr.length; i++) {
-  let box = changedRegistr[i];
-  if (glasnie.includes(box)) {
+for (i = 0; i <= toLowerCasedStr.length; i++) {
+  let char = toLowerCasedStr[i];
+  if (glasnie.includes(char)) {
     glasnieScore += 1;
   }
-  if (soglasnie.includes(box)) {
+  if (soglasnie.includes(char)) {
     soglasnieScore += 1;
   }
 }
