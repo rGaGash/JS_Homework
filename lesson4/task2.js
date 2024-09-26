@@ -23,18 +23,13 @@ const toLowerCaseCompititorsPizza = competitorsPizza.map((pizza) =>
 );
 const toLowerCaseMyPizza = pizzaNames.map((pizza) => pizza.toLowerCase());
 
-const elementsEqual = toLowerCaseCompititorsPizza.every((elements) =>
-  toLowerCaseMyPizza.includes(elements)
-);
-
 let list = [];
-if (elementsEqual) {
-  console.log("null");
-} else {
-  for (i = 0; i < toLowerCaseMyPizza.length; i++) {
-    if (!toLowerCaseCompititorsPizza.includes(toLowerCaseMyPizza[i])) {
-      list.push(toLowerCaseMyPizza[i]);
-    }
+
+for (let i = 0; i < toLowerCaseMyPizza.length; i++) {
+  if (!toLowerCaseCompititorsPizza.includes(toLowerCaseMyPizza[i])) {
+    list.push(toLowerCaseMyPizza[i]);
+  } else {
+    console.log("null");
   }
 }
-console.log(`Compititor havent this pizza - \"${list}\"`);
+console.log(list);
