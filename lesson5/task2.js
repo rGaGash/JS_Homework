@@ -6,7 +6,7 @@
 //     wordContainer += txt.toLowerCase();
 //   }
 //   let reverseWord = wordContainer.split("").reverse().join("");
-//   return wordContainer === reverseWord ? "palidrom" : "nepalidrom";
+//   return wordContainer === reverseWord;
 // }
 
 // let result = palidromCheck("КаБак");
@@ -22,10 +22,9 @@ function sentenceVersus(someText) {
     (el) => el.length === maxLength.length
   );
   if (longestElement.length >= 2) {
-    console.log(longestElement);
+    return longestElement;
   } else {
-    console.log(maxLength);
+    return maxLength;
   }
 }
-
-sentenceVersus("some text tetr");
+const result = console.log(sentenceVersus("some text tetr"));
