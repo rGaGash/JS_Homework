@@ -32,10 +32,10 @@ function transformeSentence(sentence) {
         sentenceContainer[i].slice(1).toLowerCase();
     }
   }
-  console.log(result);
+  return result;
 }
 
-transformeSentence(text);
+const result1 = console.log(transformeSentence(text));
 
 //3
 function fibonacci(n) {

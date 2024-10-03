@@ -1,16 +1,16 @@
-//1
+// //1
 
-function palidromCheck(someWord) {
-  let wordContainer = "";
-  for (const txt of someWord) {
-    wordContainer += txt.toLowerCase();
-  }
-  let reverseWord = wordContainer.split("").reverse().join("");
-  return wordContainer === reverseWord;
-}
+// function palidromCheck(someWord) {
+//   let wordContainer = "";
+//   for (const txt of someWord) {
+//     wordContainer += txt.toLowerCase();
+//   }
+//   let reverseWord = wordContainer.split("").reverse().join("");
+//   return wordContainer === reverseWord;
+// }
 
-let result = palidromCheck("КаБак");
-console.log(result);
+// let result = palidromCheck("КаБак");
+// console.log(result);
 
 //2
 function sentenceVersus(someText) {
@@ -27,4 +27,4 @@ function sentenceVersus(someText) {
     return maxLength;
   }
 }
-const result1 = console.log(sentenceVersus("some text tetr"));
+const result1 = console.log(sentenceVersus("some text tetra"));
