@@ -1,7 +1,7 @@
 //requirement 1
 const array = [7, 8, 2, 30, 85, 95, 77, 94, 37, 31];
 array.forEach((el) => {
-  if (el % 3 === 0 && el % 30 === 0) {
+  if (el % 3 === 0) {
     console.log(el);
   }
 });
@@ -27,7 +27,7 @@ console.log(array.sort((a, b) => a - b));
 divisionOfTasks();
 
 //requirement 6
-console.log(array.reduce((sum, el) => (sum += el)));
+console.log(array.reduce((sum, el) => sum + el));
 divisionOfTasks();
 
 //requirement 7
@@ -35,7 +35,7 @@ console.log(array.some((el) => el > 90));
 divisionOfTasks();
 
 //requirement 8
-console.log(array.every((el) => el.length > 2));
+console.log(array.every((el) => array[el].length > 2));
 divisionOfTasks();
 
 function divisionOfTasks() {
