@@ -35,7 +35,7 @@ console.log(array.some((el) => el > 90));
 divisionOfTasks();
 
 //requirement 8
-console.log(array.every((el) => array[el].length > 2));
+console.log(array.every((el) => el > 9 && el < 100));
 divisionOfTasks();
 
 function divisionOfTasks() {
