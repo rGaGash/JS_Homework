@@ -34,6 +34,15 @@ function updateCharacter(name, newCharacter) {
   return Object.assign(oldCharacter, newCharacter);
 }
 console.log(updateCharacter("Jack", { name: "Loya", age: 32 }));
+line();
+
+//task 5
+function removeCharacter(name) {
+  const index = character.findIndex((el) => el.name === name);
+  return character.splice(index);
+}
+console.log(removeCharacter("Jack"));
+
 console.log(character);
 function line() {
   console.log("=============================================================");
