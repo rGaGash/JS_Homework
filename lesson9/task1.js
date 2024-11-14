@@ -7,20 +7,20 @@ console.log(wordsWithFourSimbols);
 line();
 
 //task 2
-const wordsWithBarneyAndMale = [
-  Object.values(character).filter((el) => el === "Barney" || el === "male"),
-];
+const wordsWithBarneyAndMale = Object.values(character).filter(
+  (el) => typeof el === "string"
+);
 console.log(wordsWithBarneyAndMale);
 line();
 
-//task3
+//task 3
 const keys = Object.entries(character);
 for (let el of keys) {
   console.log(`key = ${el[0]}, value = ${el[1]}`);
 }
 line();
 
-//task3
+//task 4
 console.log("salary" in character);
 console.log(character.hasOwnProperty("salary"));
 

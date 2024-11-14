@@ -16,9 +16,15 @@ line();
 
 //task 2
 function getCharacter(name) {
-  return character.find((el) => el.name === name);
+  const foundedCharacter = character.find((el) => el.name === name);
+  if (foundedCharacter) {
+    console.log(foundedCharacter);
+  } else {
+    console.log("character was not found");
+  }
 }
-console.log(getCharacter("Jack"));
+getCharacter("Jack");
+getCharacter("Jeck");
 line();
 
 //task3
@@ -31,19 +37,28 @@ line();
 //task 4
 function updateCharacter(name, newCharacter) {
   const oldCharacter = getCharacter(name);
-  return Object.assign(oldCharacter, newCharacter);
+  if (oldCharacter) {
+    console.log(Object.assign(oldCharacter, newCharacter));
+  }
 }
-console.log(updateCharacter("Jack", { name: "Loya", age: 32 }));
+updateCharacter("Jack", { name: "Loya", age: 32 });
+updateCharacter("sdfsdfs", { name: "Loya", age: 32 });
 line();
 
 //task 5
 function removeCharacter(name) {
-  const index = character.findIndex((el) => el.name === name);
-  return character.splice(index);
+  if (name) {
+    const index = character.findIndex((el) => el.name === name);
+    character.splice(index, 1);
+    console.log(`Character \'${name}'\ was removed`);
+  } else {
+    console.log("sdfs");
+  }
 }
-console.log(removeCharacter("Jack"));
-
+removeCharacter("Jack");
+line();
 console.log(character);
+line();
 function line() {
   console.log("=============================================================");
 }
